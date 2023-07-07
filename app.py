@@ -180,7 +180,7 @@ def update_product(id):
     db.session.commit()
     return product_schema.jsonify(product)
 
-@app.route('/cliente/<id>', methods=['PUT'])
+@app.route('/clientes/<id>', methods=['PUT'])
 def update_cliente(id):
     cliente=Cliente.query.get(id)
 
